@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.page {
+  margin: 20px;
+}
+
+.header {
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+.blockedcontent {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+
+.sideimage {
+  width: 40%;        /* or max-width: 100%; for flexibility */
+  display: block;     /* Removes inline spacing below image */
+  object-fit: contain; /* Optional: ensures no crop when inside a container */
+}
+
+.sidetext {
+  margin: 20px;
+}
