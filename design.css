@@ -1,7 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "verdana";
+  font-size: 1.3vw;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
 }
 
 .page {
@@ -9,7 +17,7 @@ body {
 }
 
 .header {
-  background-color: yellow;
+  background-color: #f9df70;
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,8 +26,22 @@ body {
   box-sizing: border-box;
 }
 
+.logowrapper {
+  display: flex;
+  font-family: "Brush Script MT";
+  font-size: 2vw;
+}
+
+.logowrapper :hover {
+  font-weight: bold;
+}
+
+.logowrapper p {
+  margin-left: 20px; 
+}
+
 .logo {
-  width: 150px;
+  width: 80px;
   height: auto;
 }
 
@@ -36,9 +58,13 @@ body {
   color: black;
   font-size: 20px;
   font-weight: bold;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .nav li a:hover {
+  background-color: #e3b22b;
   text-decoration: underline;
 }
 
@@ -56,4 +82,59 @@ body {
 
 .sidetext {
   margin: 20px;
+}
+
+.artiststab {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f7e9ab;
+}
+
+.artiststab :hover {
+  font-weight: bold;
+}
+
+.contentbox {
+  margin: 20px;
+  padding: 20px;
+}
+
+.noticiabox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.noticia {
+  border: 3px;
+  border-style: solid;
+  padding: 20px;
+}
+
+.noticia :hover {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.noticia img {
+  height: 300px;
+  width: auto;
+}
+
+.logos {
+  margin: 20px;
+  padding: 20px;
+}
+
+.xarxalogo {
+  height: 50px;
+  width: auto;
 }
