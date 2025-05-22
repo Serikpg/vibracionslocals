@@ -75,7 +75,7 @@ a {
 }
 
 .sideimage {
-  width: 40%;        /* or max-width: 100%; for flexibility */
+  width: 30vw;        /* or max-width: 100%; for flexibility */
   display: block;     /* Removes inline spacing below image */
   object-fit: contain; /* Optional: ensures no crop when inside a container */
 }
