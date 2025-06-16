@@ -163,3 +163,52 @@ a {
   width: 10%;
   margin-top: 2%;
 }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+   position: relative;
+   margin: 5% auto;
+   padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+   width: 80%;
+   max-width: 900px;
+   background-color: #000;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+   height: 0; /* Important for the padding trick */
+}
+
+.modal iframe {
+   position: absolute; /* Position absolutely within the relative parent */
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: block;
+   pointer-events: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+#documental {
+    width: 50%;
+    height: auto;
+}

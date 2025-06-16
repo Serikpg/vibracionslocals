@@ -7,10 +7,24 @@
     <meta charset="UTF-8">
   </head>
   <body>
+    <!-- Video to be hoovered -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+<iframe
+  id="introVideo"
+  src="https://www.youtube.com/embed/-VbbIKZD6qs?enablejsapi=1&autoplay=1"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+        </div>
+    </div>
     <div class="header">
       <div class="logowrapper">
         <img src="media/vibracions_locals_logo.png" alt="logo" class="logo">
-        <p><a href="index.html">Vibracions Locals</a></p>
+        <p><a id="titol">Vibracions Locals</a></p>
       </div>
       <ul class="nav">
         <li><a href="index.html">Sobre el projecte</a></li> 
@@ -20,7 +34,14 @@
     </div>
     <div class="contentbox">
       <h1>El documental</h1>
-      <p>Encara en construcció...</p>
+      <iframe
+          id="documental"
+          src="https://www.youtube.com/embed/tsgM6yZ1fyo?enablejsapi=1&autoplay=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
     </div>
+    <script src="video.js"></script>
   </body>
 </html>
