@@ -209,6 +209,6 @@ a {
 }
 
 #documental {
-    width: 50%;
-    height: auto;
+    height: 360px; /* Example width */
+    width: 640px; /* 360 * (16/9) = 640 */
 }
